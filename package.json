@@ -1,0 +1,17 @@
+{
+  "name": "materialkitboilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for a front-end web development project using Material Kit PRO.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petr-lee/FrontendBoilerplate.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.2"
+  },
+  "license": "MIT"
+}
