@@ -1,0 +1,10 @@
+.stats {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+@media #{$small-and-down} {
+  .stats h5 {
+    font-size: 1.2em;
+  }
+}

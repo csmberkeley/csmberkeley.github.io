@@ -13,6 +13,7 @@ html {
 
 p {
   font-family: $open-sans;
+  font-size: 1.2em;
 }
 
 section {
@@ -25,8 +26,14 @@ section {
   font-weight: 700;
 }
 
+.subtitle {
+  width: 80%;
+  margin: auto;
+}
+
 /* Import Custom Styles */
 @import 'nav';
 @import 'cover';
 @import 'three-column';
 @import 'ocf';
+@import 'about';
