@@ -1,0 +1,25 @@
+.team {
+  h5 {
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+  }
+
+  .team-display {
+    .member {
+      height: 305px;
+    }
+
+    .member-name {
+      font-family: $montserrat;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .member-position {
+      font-family: $montserrat;
+      font-size: 1em;
+      margin-top: 0;
+      color: #777;
+    }
+  }
+}
