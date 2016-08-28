@@ -21,6 +21,10 @@ section {
   padding-bottom: 1.5em;
 }
 
+h6 {
+  font-size: 1.2em;
+}
+
 .label {
   font-family: $montserrat;
   font-weight: 700;
@@ -31,6 +35,10 @@ section {
   margin: auto;
 }
 
+.header {
+  margin-bottom: 24px;
+}
+
 /* Import Custom Styles */
 @import 'nav';
 @import 'cover';
@@ -38,3 +46,4 @@ section {
 @import 'ocf';
 @import 'about';
 @import 'team';
+@import 'mentors';
