@@ -20,3 +20,6 @@ Boilerplate for a front-end web development project using Materialize.
 - [Bourbon](http://bourbon.io/docs/)
 - [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 - [Browser-sync](https://www.browsersync.io/docs/gulp)
+
+## TODO
+- [ ] Change parallax cover into custom directive.

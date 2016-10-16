@@ -6,11 +6,11 @@ var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 
 gulp.task('sass', function() {
-    var scssStream = gulp.src('assets/sass/theme.scss')
+    var scssStream = gulp.src('sass/theme.scss')
         .pipe(sass())
         .pipe(concat('style.css'))
         .pipe(minify())
-        .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('css'))
         .pipe(reload({ stream:true }));
 
     return scssStream;
@@ -18,11 +18,12 @@ gulp.task('sass', function() {
 
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
-        server: true,
-        port: 8080
+        server: true
     });
 
-    gulp.watch('assets/sass/*.scss', ['sass']);
+    gulp.watch('sass/*.scss', ['sass']);
+    gulp.watch('*.html').on('change', reload);
     gulp.watch('**/*.html').on('change', reload);
+    gulp.watch('*.js').on('change', reload);
     gulp.watch('**/*.js').on('change', reload);
 });

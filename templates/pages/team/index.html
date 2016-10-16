@@ -1,0 +1,10 @@
+<section class="row center team" ng-controller="TeamController as teamCtrl">
+  <h5 class="subtitle">Fall 2016 Team</h5>
+  <div class="col s10 offset-s1 team-display">
+    <div class="member col l3 m4 s12" ng-repeat="officer in officers">
+      <img class="responsive-img" width="200px" ng-src="img/people/{{ officer.img }}">
+      <p class="member-name">{{ officer.name }}</p>
+      <p class="member-position">{{ officer.position }}</p>
+    </div>
+  </div>
+</section>
