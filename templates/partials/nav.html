@@ -26,4 +26,7 @@
 <script>
   $('.modal-trigger').leanModal();
   $('.button-collapse').sideNav();
+  $('.side-nav a').click(function() {
+    $('.button-collapse').sideNav('hide');
+  });
 </script>
