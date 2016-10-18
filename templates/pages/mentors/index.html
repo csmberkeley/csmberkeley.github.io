@@ -9,12 +9,12 @@
     <p>Junior Mentors are in charge of a group of 4-5 students under the wing of a pair of Senior Mentors, who will meet once a week with a group of other junior mentors for guidance on the week’s material, teaching tips, etc.</p>
   </div>
 </section>
-<section class="row">
+<section class="row" ng-controller="MentorsController as mentorsCtrl">
   <div class="col l8 offset-l2 s10 offset-s1">
     <h5>Application Process</h5>
     <div ng-if="applicationsOpen">
       <p>Please apply here (here for 61A, or here for 61B) to be a Junior Mentor. We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
-      <table class="striped">
+      <table class="striped calendar">
         <thead>
           <tr>
             <th data-field="date">Date</th>
