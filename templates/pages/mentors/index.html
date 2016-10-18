@@ -12,42 +12,25 @@
 <section class="row">
   <div class="col l8 offset-l2 s10 offset-s1">
     <h5>Application Process</h5>
-    <p>Please apply here (here for 61A, or here for 61B) to be a Junior Mentor. We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
-    <table class="striped">
-      <thead>
-        <tr>
+    <div ng-if="applicationsOpen">
+      <p>Please apply here (here for 61A, or here for 61B) to be a Junior Mentor. We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
+      <table class="striped">
+        <thead>
+          <tr>
             <th data-field="date">Date</th>
             <th data-field="event">Event</th>
-        </tr>
-      </thead>
+          </tr>
+        </thead>
 
-      <tbody>
-        <tr>
-          <td>1/18</td>
-          <td>Applications due</td>
-        </tr>
-        <tr>
-          <td>1/19</td>
-          <td>Interview notifications are released</td>
-        </tr>
-        <tr>
-          <td>1/21-1/22</td>
-          <td>Select applicants undergo interviews</td>
-        </tr>
-        <tr>
-          <td>1/24</td>
-          <td>Results released</td>
-        </tr>
-        <tr>
-          <td>1/31</td>
-          <td>Orientation</td>
-        </tr>
-        <tr>
-          <td>2/8</td>
-          <td>Mentoring begins</td>
-        </tr>
-      </tbody>
-    </table>
+        <tbody ng-repeat="event in events">
+          <tr>
+            <td>{{ event.date }}</td>
+            <td>{{ event.title }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p ng-if="!applicationsOpen">Applications have closed for this semester; check back here in the Spring!</p>
   </div>
 </section>
 <section class="row">

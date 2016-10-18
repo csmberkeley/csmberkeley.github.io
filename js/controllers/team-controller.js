@@ -3,15 +3,15 @@
   .controller('TeamController', function($scope) {
     $scope.officers = [
       {
-        "name": "Tiffany Qi",
-        "img": "tiffany.jpg",
+        "name": "Fahad Kamran",
+        "img": "fahad.jpg",
         "position": "President"
       },
 
       {
         "name": "Kenneth Zhou",
         "img": "kenneth.jpg",
-        "position": "Internal Vice President"
+        "position": "Interal Vice President"
       },
 
       {
@@ -21,58 +21,58 @@
       },
 
       {
-        "name": "Allan Tang",
-        "img": "allan.jpg",
-        "position": "Head Senior Mentor"
+        "name": "Joseph jiang",
+        "img": "joseph.jpg",
+        "position": "Socials"
       },
 
       {
-        "name": "Alex Takahashi",
-        "img": "alex-takahashi.jpg",
-        "position": "Social Organizer"
+        "name": "Jiana Huang",
+        "img": "jiana.jpg",
+        "position": "Secretary"
       },
 
       {
-        "name": "Mike Aboody",
-        "img": "mike.jpg",
-        "position": "Social Organizer & 61A Senior Mentor"
+        "name": "Colby Guan",
+        "img": "colby.jpg",
+        "position": "Technology"
       },
 
       {
-        "name": "Katya Stukalova",
-        "img": "katya.jpg",
-        "position": "Social Organizer & 61A Senior Mentor"
-      },
-
-      {
-        "name": "Alex Zhang",
-        "img": "alex_z.jpg",
-        "position": "Communications & 61A Senior Mentor"
-      },
-
-      {
-        "name": "AC Dela Paz",
-        "img": "ac.png",
-        "position": "61A Senior Mentor"
+        "name": "Jerry Chen",
+        "img": "jerry.jpg",
+        "position": "CS 61A Coordinator"
       },
 
       {
         "name": "Anwar Baroudi",
         "img": "anwar.jpg",
-        "position": "61A Senior Mentor"
+        "position": "CS 61A Coordinator"
       },
 
       {
-        "name": "Colin Schoen",
-        "img": "colin.jpg",
-        "position": "61A Senior Mentor"
+        "name": "Byung Choi",
+        "img": "byung.jpg",
+        "position": "CS 61B Coordinator"
       },
 
       {
-        "name": "Fahad Kamran",
-        "img": "fahad.jpg",
-        "position": "61A Senior Mentor"
-      }
+        "name": "Jennifer Liang",
+        "img": "jennifer.jpg",
+        "position": "CS 61B Coordinator"
+      },
+
+      {
+        "name": "Katya Stukalova",
+        "img": "katya.jpg",
+        "position": "CS 70 Coordinator"
+      },
+
+      {
+        "name": "Albert Pham",
+        "img": "albert.jpg",
+        "position": "CS 70 Coordinator"
+      },
     ];
   });
 })();
