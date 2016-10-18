@@ -1,7 +1,10 @@
 nav {
+  background-color: color("grey", "lighten-3");
+
   a.brand-logo {
     font-family: $montserrat;
     font-weight: 700;
+    color: color("blue", "darken-4");
   }
 
   a.button-collapse i {
@@ -14,12 +17,14 @@ nav {
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
+      color: black;
     }
   }
 
   ul.side-nav {
     a {
       font-weight: 600;
+      color: black;
     }
   }
 }

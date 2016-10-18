@@ -2,17 +2,19 @@
   <nav>
     <div class="nav-wrapper">
       <a href="#/" class="brand-logo">CSM</a>
-      <a href="javascript: void(0)" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+      <a href="javascript: void(0)" data-activates="mobile-demo" class="button-collapse black-text"><i class="fa fa-bars"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/join">Join</a></li>
+        <li><a href="#/students">Students</a></li>
+        <li><a href="#/mentors">Mentors</a></li>
+        <li><a class="modal-trigger" href="#modal1">Partners</a></li>
         <li><a href="#/team">Team</a></li>
         <li><a href="https://drive.google.com/drive/u/0/folders/0B_cSwa5INrcIfmdMeHNhZlg5c0tBbnJMZFhqRzNtTGZjUjZvTG9zUk1lWTNLdjJSLWFxLTQ" target="_blank">Resources</a></li>
         <li><a href="http://csmscheduler.herokuapp.com/">Tutoring</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#/about">About</a></li>
-        <li><a href="#/join">Join</a></li>
+        <li><a href="#/students">Students</a></li>
+        <li><a href="#/mentors">Mentors</a></li>
+        <li><a class="modal-trigger" href="#modal1">Partners</a></li>
         <li><a href="#/team">Team</a></li>
         <li><a href="https://drive.google.com/drive/u/0/folders/0B_cSwa5INrcIfmdMeHNhZlg5c0tBbnJMZFhqRzNtTGZjUjZvTG9zUk1lWTNLdjJSLWFxLTQ" target="_blank">Resources</a></li>
         <li><a href="http://csmscheduler.herokuapp.com/">Tutoring</a></li>
@@ -21,6 +23,18 @@
   </nav>
 </div>
 
+<div id="modal1" class="modal bottom-sheet">
+  <a class="modal-content center blue darken-2 stats waves-effect waves-light partner-btn" href="#/partners">
+    <div class="valign-wrapper partner-wrapper">
+      <h6 class="white-text subtitle valign">Learn how to gain outreach to the largest CS community at UC Berkeley!</h6>
+    </div>
+  </a>
+</div>
+
 <script>
-  $(".button-collapse").sideNav();
+  $('.modal-trigger').leanModal();
+  $('.button-collapse').sideNav();
+  $('.partner-btn').click(function() {
+    $('#modal1').closeModal();
+  });
 </script>

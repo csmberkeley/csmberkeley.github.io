@@ -4,12 +4,6 @@
         $routeProvider.when('/', {
             templateUrl: 'templates/pages/home/index.html'
         })
-        .when('/about', {
-            templateUrl: 'templates/pages/about/index.html'
-        })
-        .when('/join', {
-            templateUrl: 'templates/pages/join/index.html'
-        })
         .when('/team', {
             templateUrl: 'templates/pages/team/index.html'
         })

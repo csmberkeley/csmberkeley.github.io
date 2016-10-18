@@ -1,0 +1,16 @@
+.companies {
+  .col {
+    img {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media #{$small-and-down} {
+  .companies {
+    img {
+      padding-top: 4em;
+    }
+  }
+}
