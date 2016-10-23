@@ -4,7 +4,7 @@ nav {
   a.brand-logo {
     font-family: $montserrat;
     font-weight: 700;
-    color: color("blue", "darken-4");
+    color: $primary-color;
   }
 
   a.button-collapse i {

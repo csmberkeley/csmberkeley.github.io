@@ -33,7 +33,7 @@
 /* 1. Colors
    ========================================================================== */
 
-$primary-color: color("blue", "darken-2") !default;
+$primary-color: color("green", "lighten-1") !default;
 $primary-color-light: lighten($primary-color, 30%) !default;
 $primary-color-dark: darken($primary-color, 30%) !default;
 
