@@ -11,9 +11,14 @@
 </section>
 <section class="row" ng-controller="MentorsController as mentorsCtrl">
   <div class="col l8 offset-l2 s10 offset-s1">
-    <h5>Application Process</h5>
     <div ng-if="applicationsOpen">
-      <p>Please apply here (here for 61A, or here for 61B) to be a Junior Mentor. We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
+    <h5>Applications for Junior Mentors now open!</h5>
+      <p>We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
+      <a href="https://goo.gl/forms/Y73SKYmNs39H5m0A2" class="mentor-apply-link waves-effect waves-light btn-large">CS 61A</a>
+      <a href="https://goo.gl/forms/MAv4AAPnp0sm5ABN2"class="mentor-apply-link waves-effect waves-light btn-large">CS 61B</a>
+      <a href="https://goo.gl/forms/zLgKit4CaftD4V2C2"class="mentor-apply-link waves-effect waves-light btn-large">CS 70</a>
+      <br><br>
+      <h6>Application process:</h6>
       <table class="striped calendar">
         <thead>
           <tr>
@@ -30,7 +35,9 @@
         </tbody>
       </table>
     </div>
-    <p ng-if="!applicationsOpen">Applications have closed for this semester; check back at the end of the semester!</p>
+    <div ng-if="!applicationsOpen">
+      <h6>Applications have closed for this semester; check back at the end of the semester!</h6>
+    </div>
   </div>
 </section>
 <section class="row">

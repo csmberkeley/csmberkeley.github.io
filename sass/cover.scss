@@ -20,5 +20,18 @@
       font-family: $open-sans;
       font-weight: 300;
     }
+
+    h6 {
+      font-family: $open-sans;
+      font-weight: 800;
+    }
   }
+}
+
+.cover-darken {
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.3); 
+  position: relative;
+  top: calc(-500px - 2em);
+  height: 100%;
 }
