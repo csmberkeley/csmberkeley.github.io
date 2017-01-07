@@ -1,5 +1,8 @@
 <section class="row center team" ng-controller="TeamController as teamCtrl">
-  <h5 class="subtitle">Fall 2016 Team</h5>
+  <h5 class="subtitle">
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam === 1}" ng-click="toggleTeam()">Spring 2017 Team</span> |
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam === 0}" ng-click="toggleTeam()">Fall 2016 Team</span> 
+  </h5>
   <div class="col s10 offset-s1 team-display">
     <div class="member col l3 m4 s12" ng-repeat="officer in officers">
       <img class="responsive-img" width="200px" ng-src="img/people/{{ officer.img }}">

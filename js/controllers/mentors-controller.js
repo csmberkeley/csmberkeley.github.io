@@ -8,7 +8,7 @@
       { 'date': '1/17 - 1/20', 'title': 'Interviews' },
       { 'date': '1/22', 'title': 'Interview results' },
       { 'date': '1/29', 'title': 'Orientation' },
-      { 'date': '2/5', 'title': 'Mentoring beings' }
+      { 'date': '2/5', 'title': 'Mentoring begins' }
     ];
   });
 })();
