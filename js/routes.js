@@ -16,6 +16,16 @@
         .when('/partners', {
             templateUrl: 'templates/pages/partners/index.html'
         })
+        .when('/scheduler', {
+            redirectTo: function() {
+                window.location.href = 'http://csmscheduler.herokuapp.com/'
+            }
+        })
+        .when('/interview', {
+            redirectTo: function() {
+                window.location.href = 'http://scrutinizer.herokuapp.com/'
+            }
+        })
         .otherwise({
             redirectTo: '/'
         });
