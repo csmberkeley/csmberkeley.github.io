@@ -1,6 +1,22 @@
 (function() {
   angular.module('CSM')
   .controller('TeamController', function($scope) {
+    const duties = {
+      'President': 'plans semester\'s organizational timeline and outreach efforts, leads exec meetings, works jointly with other exec roles.',
+      'Internal Vice President': 'Acts as ASUC/ESC liasion, drafts CSM budget, in charge of fundraisers, branding, and marketing.',
+      'External Vice President': 'Organizes outreach to companies, manages social media, also helps with branding and marketing.',
+      'Communications': 'Manages CSM email lists, drafts and sends feedback forms, newsletters, and emails, manages CSM apparel.',
+      'Coord': 'Plans course timelines based on semester + curriculum, main point of contact for course staff, leads Senior Mentor meetings, mentor recruitment, attendace, feedback, and Piazza.',
+      'Socials': 'Leads direction on social aspect of orientation w/ a committee, mentor training, facilitates discussions and brainstorming on developing a CSM community.',
+      'Technology': 'Leads software development of Scheduler, internal interviewing software, and other apps at https://github.com/csmberkeley. Acts as product manager.',
+      'Advisor': 'Provides input and advice during meetings to all members of Exec, assists with transition / training of new exec memebers.'
+    }
+    $scope.duty = function(position) {
+      if (position.indexOf('Coord') !== -1) {
+        return duties['Coord'];
+      }
+      return duties[position];
+    }
     const allOfficers = [[
       {
         "name": "Fahad Kamran",
@@ -11,7 +27,7 @@
       {
         "name": "Joseph Jiang",
         "img": "joseph.jpg",
-        "position": "Interal Vice President"
+        "position": "Internal Vice President"
       },
 
       {
@@ -40,7 +56,7 @@
 
       {
         "name": "Paul Bitutsky",
-        "img": "placeholder.jpg",
+        "img": "paul.jpg",
         "position": "CS 61A Coordinator"
       },
 
@@ -52,7 +68,7 @@
 
       {
         "name": "Byung Choi",
-        "img": "byung.jpg",
+        "img": "byung-sp17.jpg",
         "position": "CS 61B Coordinator"
       },
 
@@ -64,14 +80,33 @@
 
       {
         "name": "Jerry Huang",
-        "img": "placeholder.jpg",
+        "img": "jeralie.jpg",
         "position": "CS 70 Coordinator"
       },
-
       {
         "name": "Peijie Li",
-        "img": "placeholder.jpg",
+        "img": "peijie.jpg",
         "position": "CS 70 Coordinator"
+      },
+      {
+        "name": "Jennifer Liang",
+        "img": "jennifer-sp17.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Ricky Liang",
+        "img": "ricky-sp17.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Tiffany Perumpali",
+        "img": "piffany.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Jerry Chen",
+        "img": "jerry-sp17.jpg",
+        "position": "Advisor"
       },
     ], [
       {
@@ -83,7 +118,7 @@
       {
         "name": "Kenneth Zhou",
         "img": "kenneth.jpg",
-        "position": "Interal Vice President"
+        "position": "Internal Vice President"
       },
 
       {
@@ -101,7 +136,7 @@
       {
         "name": "Jiana Huang",
         "img": "jiana.jpg",
-        "position": "Secretary"
+        "position": "Communications"
       },
 
       {

@@ -3,9 +3,21 @@
     <span class="team-title" ng-class="{'team-title-inactive': activeTeam === 1}" ng-click="toggleTeam()">Spring 2017 Team</span> |
     <span class="team-title" ng-class="{'team-title-inactive': activeTeam === 0}" ng-click="toggleTeam()">Fall 2016 Team</span> 
   </h5>
+  <p><h6 class="center-align">Hover over photos for more info!</h6></p>
+  <br>
   <div class="col s10 offset-s1 team-display">
     <div class="member col l3 m4 s12" ng-repeat="officer in officers">
-      <img class="responsive-img" width="200px" ng-src="img/people/{{ officer.img }}">
+      <div class="cube-scene">
+        <div class="cube">
+          <div class="unflipped">
+            <img class="responsive-img" width="200px" ng-src="img/people/{{ officer.img }}">
+          </div>
+          <div class="flipped">
+            <div class="cube-title">{{ officer.position }}</div>
+            <div class="cube-text"> {{ duty(officer.position) }} </div>
+          </div>
+        </div>
+      </div>
       <p class="member-name">{{ officer.name }}</p>
       <p class="member-position">{{ officer.position }}</p>
     </div>
