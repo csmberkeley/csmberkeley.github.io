@@ -18,27 +18,27 @@
       <a class="disabled mentor-apply-link waves-effect waves-light btn-large">CS 61B</a>
       <a class="disabled mentor-apply-link waves-effect waves-light btn-large">CS 70</a>
       <br><br>
+      <h6>Application process:</h6>
+      <table class="striped calendar">
+        <thead>
+          <tr>
+            <th data-field="date">Date</th>
+            <th data-field="event">Event</th>
+          </tr>
+        </thead>
+
+        <tbody ng-repeat="event in events">
+          <tr>
+            <td>{{ event.date }}</td>
+            <td>{{ event.title }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div ng-if="!applicationsOpen">
       <h6>Applications have closed for this semester; check back at the end of the semester!</h6>
     </div>
     <br>
-    <h6>Ongoing application process:</h6>
-    <table class="striped calendar">
-      <thead>
-        <tr>
-          <th data-field="date">Date</th>
-          <th data-field="event">Event</th>
-        </tr>
-      </thead>
-
-      <tbody ng-repeat="event in events">
-        <tr>
-          <td>{{ event.date }}</td>
-          <td>{{ event.title }}</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </section>
 <section class="row">
