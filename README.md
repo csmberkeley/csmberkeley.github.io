@@ -1,25 +1,21 @@
-# Materialize Boilerplate
-Boilerplate for a front-end web development project using Materialize.
+Official site for Computer Science Mentors
 
-## How to host
-1. Use Github Pages like normal. The procedure isn't any different.
+CSS: [Materialize](http://materializecss.com/), [Sass](http://sass-lang.com/guide), [Bourbon](http://bourbon.io/docs/)  
+JS: [Angular](https://angularjs.org/), [jQuery](https://api.jquery.com/)  
+Development tools: [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md), [Browser-sync](https://www.browsersync.io/docs/gulp)  
 
-## How to Install
-1. Clone the repository.
-2. Run "npm install".
+Credits to [this boilerplate](https://github.com/petr-lee/MaterializeBoilerplate)
 
-## Usage
-- Run "gulp serve" for hot code reload.
-- Add custom Sass files in the sass folder, and import into theme.scss.
-  - Compile Sass with "gulp sass".
+## Setup
+* Requirements: [Node](https://nodejs.org/en/), Global `gulp` cli: `npm install -g gulp-cli`
+* Run `npm install` to get local packages
 
-## Frameworks Installed
-- [Materialize](http://materializecss.com/)
-- [jQuery](https://api.jquery.com/)
-- [Sass](http://sass-lang.com/guide)
-- [Bourbon](http://bourbon.io/docs/)
-- [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
-- [Browser-sync](https://www.browsersync.io/docs/gulp)
+## Development
+* Run `gulp serve` for hot code reload
+* Add custom Sass files in the `sass/` folder, and import them at the bottom of `theme.scss`.
 
-## TODO
-- [ ] Change parallax cover into custom directive.
+## Deployment
+* The OCF doesn't allow for 1) redirects or 2) DNS configuration so push to [csmentors.berkeley.edu](https://csmentors.berkeley.edu/#/) by:
+  1. SSH into our OCF account
+  2. `cd` to `public_html`
+  3. `git pull`
