@@ -3,23 +3,28 @@
   <h6 class="white-text subtitle">Gain experience tutoring a small group of students in the introductory computer science courses as a Junior Mentor.</h6>
 </section>
 
-<section class="row">
-  <div class="col l8 offset-l2 s10 offset-s1">
-    <h5>Responsibilities</h5>
-    <p>Junior Mentors are in charge of a group of 4-5 students under the wing of a pair of Senior Mentors, who will meet once a week with a group of other junior mentors for guidance on the week’s material, teaching tips, etc.</p>
+<div class="container">
+  <div class="section">
+    <div class="col l8 offset-l2 s10 offset-s1">
+      <h5 class="label">Responsibilities</h5>
+      <p class="info">All mentors are in charge of a group of 4-5 students.</p>
+      <p class="info"><b>Junior Mentors</b> are under the wing of a pair of <b>Senior Mentors</b> who meet with them and a group of 4-5 other Junior Mentors once a week.</p>
+      <p class="info"><b>Senior Mentors</b> run these meetings, going over guidance on the week’s material, teaching tips, etc.</p>
+    </div>
   </div>
-</section>
-<section class="row" ng-controller="MentorsController as mentorsCtrl">
-  <div class="col l8 offset-l2 s10 offset-s1">
+  <div class="divider"></div>
+  <div class="section"><a href="https://csmberkeley.github.io/sage/">Check out our collection of teaching tips written by mentors here!</a></div>
+  <div class="divider"></div>
+  <div class="section" ng-controller="MentorsController as mentorsCtrl">
     <div ng-if="applicationsOpen">
-    <h5>Applications for Junior Mentors are now open!</h5>
-      <p>We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
+      <h5 class="label">Applications for Junior Mentors are now open!</h5>
+      <p class="info">We are not opening Senior Mentor positions at this time. We look forward to reading your application!</p>
 
       <a href="https://goo.gl/forms/iDDq4bYTNcqqTZbJ2" class="mentor-apply-link waves-effect waves-light btn-large">CS 61A</a>
       <a href="https://goo.gl/forms/6J0j4eVKnxjzp0Ok2" class="mentor-apply-link waves-effect waves-light btn-large">CS 61B</a>
       <a href="https://goo.gl/forms/KnUDlKFl38k5MrL43" class="mentor-apply-link waves-effect waves-light btn-large">CS 70</a>
       <br><br>
-      <h6>Application process:</h6>
+      <h6 class="sublabel">Application process:</h6>
       <table class="striped calendar">
         <thead>
           <tr>
@@ -28,8 +33,8 @@
           </tr>
         </thead>
 
-        <tbody ng-repeat="event in events">
-          <tr>
+        <tbody>
+          <tr ng-repeat="event in events">
             <td>{{ event.date }}</td>
             <td>{{ event.title }}</td>
           </tr>
@@ -37,40 +42,39 @@
       </table>
     </div>
     <div ng-if="!applicationsOpen">
-      <h6>Applications have closed for this semester; check back at the end of the semester!</h6>
+      <h6 class="sublabel">Applications have closed for this semester; check back at the end of the semester!</h6>
     </div>
     <br>
   </div>
-</section>
-<section class="row">
-  <div class="col l8 offset-l2 s10 offset-s1 faq">
-    <h5>FAQ</h5>
+  <div class="divider"></div>
+  <div class="faq section">
+    <h5 class="label">FAQ</h5>
 
-    <h6>What are you looking for in a Junior Mentor?</h6>
-    <p>We look for applicants who are dedicated to their students. This could be in the form of previous tutoring experience, mastery of the material, and flexible time commitments. While we do take grades into account, it is not a prioritized metric. Many successful mentors have received a variety of grades.</p>
+    <h6 class="sublabel">What are you looking for in a Junior Mentor?</h6>
+    <p class="info">We look for applicants who are dedicated to their students. This could be in the form of previous tutoring experience, mastery of the material, and flexible time commitments. While we do take grades into account, it is not a prioritized metric. Many successful mentors have received a variety of grades.</p>
 
-    <h6>Are there any prerequisites to be a Junior Mentor?</h6>
-    <p>There are no formal requirements, but we prefer mentors to have had at least one semester of lab assisting, either in past semesters or concurrently.</p>
+    <h6 class="sublabel">Are there any prerequisites to be a Junior Mentor?</h6>
+    <p class="info">There are no formal requirements, but we prefer mentors to have had at least one semester of lab assisting, either in past semesters or concurrently.</p>
 
-    <h6>What is the time commitment for a Junior Mentor?</h6>
-    <p>We estimate 3-4 hours/week. We break it down as follows: Senior Meeting (1 hour), Tutoring Meeting (1 hour), Other Preparations: 1-2 hours.</p>
+    <h6 class="sublabel">What is the time commitment for a Junior Mentor?</h6>
+    <p class="info">We estimate 3-4 hours/week. We break it down as follows: Senior Meeting (1 hour), Tutoring Meeting (1 hour), Other Preparations: 1-2 hours.</p>
 
-    <h6>How many Junior Mentors are you planning on accepting?</h6>
-    <p>Depends on the class and the budget associated with each one. In general, our mentors will be in total ~7% of the overall class size (which includes Senior Mentors, Junior Mentors, and Associate Mentors). This semester, we are looking for 10-30 Junior Mentors.</p>
+    <h6 class="sublabel">How many Junior Mentors are you planning on accepting?</h6>
+    <p class="info">Depends on the class and the budget associated with each one. In general, our mentors will be in total ~7% of the overall class size (which includes Senior Mentors, Junior Mentors, and Associate Mentors). This semester, we are looking for 10-30 Junior Mentors.</p>
 
-    <h6>Can I be a junior mentor without meeting with a senior mentor?</h6>
-    <p>You may. We have another category of mentor called “Associate Mentor” in which you have extensive experience in the class you’re mentoring for. We will be more strict with acceptances as an Associate Mentor and generally encourage first time tutors to be a Junior Mentor and receive guidance from Senior Mentors.</p>
+    <h6 class="sublabel">Can I be a junior mentor without meeting with a senior mentor?</h6>
+    <p class="info">You may. We have another category of mentor called “Associate Mentor” in which you have extensive experience in the class you’re mentoring for. We will be more strict with acceptances as an Associate Mentor and generally encourage first time tutors to be a Junior Mentor and receive guidance from Senior Mentors.</p>
 
-    <h6>Can I get units for being a mentor?</h6>
-    <p>Yes! Each Junior Mentor can receive 1 unit of P/NP credit. We will provide you the appropriate CCN when the time comes. You are not required to enroll.</p>
+    <h6 class="sublabel">Can I get units for being a mentor?</h6>
+    <p class="info">Yes! Each Junior Mentor can receive 1 unit of P/NP credit. We will provide you the appropriate CCN when the time comes. You are not required to enroll.</p>
 
-    <h6>Can I also do other forms of tutoring other than group?</h6>
-    <p>Junior Mentors’ primary responsibility is to host group tutoring. However, Junior Mentors may also choose to do 1-1 tutoring in conjunction with CS 98, Introduction to Teaching Computer Science. For other forms of support, you are free to lab assist or assist in office hours or guerrilla sections, provided you have received a passing grade in your respective class.</p>
+    <h6 class="sublabel">Can I also do other forms of tutoring other than group?</h6>
+    <p class="info">Junior Mentors’ primary responsibility is to host group tutoring. However, Junior Mentors may also choose to do 1-1 tutoring in conjunction with CS 98, Introduction to Teaching Computer Science. For other forms of support, you are free to lab assist or assist in office hours or guerrilla sections, provided you have received a passing grade in your respective class.</p>
 
-    <h6>What is this CS 370?</h6>
-    <p>CS 370, or CS 98, Introduction to Teaching Computer Science, is a class for aspiring teachers, providing guidance to lab assistants on how to teach computer science and put it into practice. It offers 1-1 tutoring for the class of your choice. Many of our mentors have taken this class concurrently or previously, and is highly recommended! More information on the <a href="http://berkeley-cs370.github.io/" target="_blank">CS 370 website</a>.</p>
+    <h6 class="sublabel">What is this CS 370?</h6>
+    <p class="info">CS 370, or CS 98, Introduction to Teaching Computer Science, is a class for aspiring teachers, providing guidance to lab assistants on how to teach computer science and put it into practice. It offers 1-1 tutoring for the class of your choice. Many of our mentors have taken this class concurrently or previously, and is highly recommended! More information on the <a href="http://berkeley-cs370.github.io/" target="_blank">CS 370 website</a>.</p>
 
-    <h6>Who can I contact if I have more questions?</h6>
-    <p>Feel free to email us at <a href="MAILTO:csmberkeley@gmail.com">csmberkeley@gmail.com</a> if you have any questions or concerns!</p>
+    <h6 class="sublabel">Who can I contact if I have more questions?</h6>
+    <p class="info">Feel free to email us at <a href="MAILTO:csmberkeley@gmail.com">csmberkeley@gmail.com</a> if you have any questions or concerns!</p>
   </div>
-</section>
+</div>
