@@ -10,7 +10,7 @@
       { 'date': '8/25', 'title': 'Interview results (CS70)' },
       { 'date': '8/27', 'title': 'Interview results (CS61A CS61B)' },
       { 'date': '8/27', 'title': 'Mandatory Meeting (CS70)' },
-      { 'date': '8/28', 'title': 'Meeting with Senior Mentors Begans (CS70)' },
+      { 'date': '8/28', 'title': 'Meeting with Senior Mentors Begins (CS70)' },
       { 'date': '9/4', 'title': 'Orientation' },
       { 'date': '9/5', 'title': 'Meetings with Senior Mentors begin' },
       { 'date': '9/5', 'title': 'Mentoring begins (CS70)' },
