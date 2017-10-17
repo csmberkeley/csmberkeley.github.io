@@ -82,6 +82,16 @@
         "name": "Aditya Baroudi",
         "img": "aditya.jpg",
         "position": "EE 16A Coordinator" 
+      }, 
+      {
+        "name": "Fahad Kamran",
+        "img": "fahad.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Kenneth Zhou",
+        "img": "kenneth.jpg",
+        "position": "Advisor"
       }
     ], [
       {
