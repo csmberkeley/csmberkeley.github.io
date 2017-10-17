@@ -109,10 +109,10 @@
       return;
     }
     $('.stats').addClass('onload');
-    (new CountUp('student-count', 0, 680, 0, 3, options)).start();
-    (new CountUp('mentor-count', 0, 130, 0, 3, options)).start();
-    (new CountUp('rating-count', 0, 4.5, 1, 3, options)).start();
-    (new CountUp('return-count', 0, 91, 0, 3, options)).start();
+    (new CountUp('student-count', 0, 1100, 0, 3, options)).start();
+    (new CountUp('mentor-count', 0, 120, 0, 3, options)).start();
+    (new CountUp('rating-count', 0, 4.6, 1, 3, options)).start();
+    (new CountUp('return-count', 0, 93, 0, 3, options)).start();
     counted = true;
   }
 
@@ -143,8 +143,7 @@
     loadNext('#course1', 500);
     loadNext('#course2', 250);
     loadNext('#course3', 250);
-    loadNext('#pre-course4', 250);
-    loadNext('#course4', 1000);
+    loadNext('#course4', 250);
     setTimeout(showStats, timeout + 800);
   });
 </script>
