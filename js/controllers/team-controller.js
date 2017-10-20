@@ -24,7 +24,7 @@
         "position": "President"
       }, 
       {
-        "name": "Tiffany Perumpali",
+        "name": "Tiffany Perumpail",
         "img": "piffany.jpg",
         "position": "Internal Vice President"
       },
@@ -175,7 +175,7 @@
         "position": "Advisor"
       },
       {
-        "name": "Tiffany Perumpali",
+        "name": "Tiffany Perumpail",
         "img": "piffany.jpg",
         "position": "Advisor"
       },
