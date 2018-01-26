@@ -19,6 +19,97 @@
     }
     const allOfficers = [[
       {
+        "name": "Kevin Lin",
+        "img": "kevin-exec.jpg",
+        "position": "President"
+      }, 
+      {
+        "name": "Jason Goodman",
+        "img": "jason-exec.jpg",
+        "position": "Internal Vice President"
+      },
+      {
+        "name": "Jerry Huang",
+        "img": "jerry-exec.jpg",
+        "position": "External Vice President"
+      },
+      {
+        "name": "Joy Tang",
+        "img": "joy-exec.jpg",
+        "position": "Communications"
+      },
+      {
+        "name": "James Jiang",
+        "img": "james2-exec.jpg",
+        "position": "Technology"
+      },
+      {
+        "name": "Paul Bitutsky",
+        "img": "paul-exec.jpg",
+        "position": "Technology"
+      },
+      {
+        "name": "Jennie Chen",
+        "img": "jennie-chen-exec.jpg",
+        "position": "CS 61A Coordinator"
+      },
+      {
+        "name": "Chris Allsman",
+        "img": "chris-exec.jpg",
+        "position": "CS 61A Coordinator"
+      },
+      {
+        "name": "Matthew Soh",
+        "img": "matthew-exec.jpg",
+        "position": "CS 61B Coordinator"
+      },
+      {
+        "name": "Mudit Gupta",
+        "img": "muditgupta.jpg",
+        "position": "CS 61B Coordinator"
+      },
+      {
+        "name": "Suraj Rampure",
+        "img": "suraj-exec.png",
+        "position": "CS 70 Coordinator"
+      },
+      {
+        "name": "Yining Liu",
+        "img": "yining-exec.jpg",
+        "position": "CS 70 Coordinator"
+      },
+      {
+        "name": "Varsha Ramakrishnan",
+        "img": "varsha-exec.jpg",
+        "position": "EE 16A Coordinator"
+      },
+      {
+        "name": "Aditya Baradwaj",
+        "img": "aditya.jpg",
+        "position": "EE 16A Coordinator" 
+      }, 
+      {
+        "name": "Fahad Kamran",
+        "img": "fahad-exec.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Jiana Huang",
+        "img": "jiana-exec.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Tiffany Perumpail",
+        "img": "piffany.jpg",
+        "position": "Advisor"
+      },
+      {
+        "name": "Anwar Baroudi",
+        "img": "anwar-exec.jpg",
+        "position": "Advisor"
+      }
+    ],[
+      {
         "name": "Jiana Huang",
         "img": "jiana.jpg",
         "position": "President"
@@ -79,7 +170,7 @@
         "position": "EE 16A Coordinator"
       },
       {
-        "name": "Aditya Baroudi",
+        "name": "Aditya Baradwaj",
         "img": "aditya.jpg",
         "position": "EE 16A Coordinator" 
       }, 
@@ -93,171 +184,7 @@
         "img": "kenneth.jpg",
         "position": "Advisor"
       }
-    ], [
-      {
-        "name": "Fahad Kamran",
-        "img": "fahad.jpg",
-        "position": "President"
-      },
-
-      {
-        "name": "Joseph Jiang",
-        "img": "joseph.jpg",
-        "position": "Internal Vice President"
-      },
-
-      {
-        "name": "Anwar Baroudi",
-        "img": "anwar.jpg",
-        "position": "External Vice President"
-      },
-
-      {
-        "name": "Kenneth Zhou",
-        "img": "kenneth.jpg",
-        "position": "Socials"
-      },
-
-      {
-        "name": "Jiana Huang",
-        "img": "jiana.jpg",
-        "position": "Communications"
-      },
-
-      {
-        "name": "Colby Guan",
-        "img": "colby.jpg",
-        "position": "Technology"
-      },
-
-      {
-        "name": "Paul Bitutsky",
-        "img": "paul.jpg",
-        "position": "CS 61A Coordinator"
-      },
-
-      {
-        "name": "Katya Stukalova",
-        "img": "katya.jpg",
-        "position": "CS 61A Coordinator"
-      },
-
-      {
-        "name": "Byung Choi",
-        "img": "byung-sp17.jpg",
-        "position": "CS 61B Coordinator"
-      },
-
-      {
-        "name": "Kevin Lin",
-        "img": "kevin.jpg",
-        "position": "CS 61B Coordinator"
-      },
-
-      {
-        "name": "Jerry Huang",
-        "img": "jeralie.jpg",
-        "position": "CS 70 Coordinator"
-      },
-      {
-        "name": "Peijie Li",
-        "img": "peijie.jpg",
-        "position": "CS 70 Coordinator"
-      },
-      {
-        "name": "Jennifer Liang",
-        "img": "jennifer-sp17.jpg",
-        "position": "Advisor"
-      },
-      {
-        "name": "Ricky Liang",
-        "img": "ricky-sp17.jpg",
-        "position": "Advisor"
-      },
-      {
-        "name": "Tiffany Perumpail",
-        "img": "piffany.jpg",
-        "position": "Advisor"
-      },
-      {
-        "name": "Jerry Chen",
-        "img": "jerry-sp17.jpg",
-        "position": "Advisor"
-      },
     ], 
-    // [
-    //   {
-    //     "name": "Fahad Kamran",
-    //     "img": "fahad.jpg",
-    //     "position": "President"
-    //   },
-
-    //   {
-    //     "name": "Kenneth Zhou",
-    //     "img": "kenneth.jpg",
-    //     "position": "Internal Vice President"
-    //   },
-
-    //   {
-    //     "name": "Ricky Liang",
-    //     "img": "ricky.jpg",
-    //     "position": "External Vice President"
-    //   },
-
-    //   {
-    //     "name": "Joseph Jiang",
-    //     "img": "joseph.jpg",
-    //     "position": "Socials"
-    //   },
-
-    //   {
-    //     "name": "Jiana Huang",
-    //     "img": "jiana.jpg",
-    //     "position": "Communications"
-    //   },
-
-    //   {
-    //     "name": "Colby Guan",
-    //     "img": "colby.jpg",
-    //     "position": "Technology"
-    //   },
-
-    //   {
-    //     "name": "Jerry Chen",
-    //     "img": "jerry.jpg",
-    //     "position": "CS 61A Coordinator"
-    //   },
-
-    //   {
-    //     "name": "Anwar Baroudi",
-    //     "img": "anwar.jpg",
-    //     "position": "CS 61A Coordinator"
-    //   },
-
-    //   {
-    //     "name": "Byung Choi",
-    //     "img": "byung.jpg",
-    //     "position": "CS 61B Coordinator"
-    //   },
-
-    //   {
-    //     "name": "Jennifer Liang",
-    //     "img": "jennifer.jpg",
-    //     "position": "CS 61B Coordinator"
-    //   },
-
-    //   {
-    //     "name": "Katya Stukalova",
-    //     "img": "katya.jpg",
-    //     "position": "CS 70 Coordinator"
-    //   },
-
-    //   {
-    //     "name": "Albert Pham",
-    //     "img": "albert.jpg",
-    //     "position": "CS 70 Coordinator"
-    //   },
-    // ]
     ];
 
     $scope.activeTeam = 0;

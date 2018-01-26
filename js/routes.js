@@ -7,6 +7,15 @@
         .when('/team', {
             templateUrl: 'templates/pages/team/index.html'
         })
+        .when('/bios', {
+            templateUrl: 'templates/pages/bios/index.html'
+        })
+        .when('/exec', {
+            templateUrl: 'templates/pages/bios/exec.html'
+        })
+        .when('/cs70', {
+            templateUrl: 'templates/pages/bios/cs70.html'
+        })
         .when('/mentors', {
             templateUrl: 'templates/pages/mentors/index.html'
         })
