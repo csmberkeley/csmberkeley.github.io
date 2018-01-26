@@ -46,7 +46,7 @@
       {
         "name": "Paul Bitutsky",
         "img": "paul-exec.jpg",
-        "position": "Technology"
+        "position": "Socials"
       },
       {
         "name": "Jennie Chen",
