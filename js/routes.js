@@ -19,6 +19,9 @@
         .when('/cs61b', {
             templateUrl: 'templates/pages/bios/cs61b.html'
         })
+        .when('/cs61a', {
+            templateUrl: 'templates/pages/bios/cs61a.html'
+        })
         .when('/ee16a', {
             templateUrl: 'templates/pages/bios/ee16a.html'
         })
