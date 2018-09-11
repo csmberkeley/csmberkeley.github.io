@@ -24,6 +24,18 @@ td {
   padding-left: 40px;
 }
 
+.bio-container {
+  width:200px;
+  height:200px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.bio-image {
+  width: 100%
+}
+
+
 </style>
 </head>
 
@@ -35,7 +47,26 @@ td {
     </div>
     <div>
       <table>
-        <tbody>
+        <tbody ng-controller="BiosController">
+          <!-- I've deliberately left out emails.--> 
+          <tr ng-repeat="bio in CS61A">
+            <td>
+              <img src="{{bio.imgName}}" onerror="if (this.src != 'img/people/placeholder.jpg') this.src = 'img/people/placeholder.jpg';" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label">{{bio.name}}</p>
+              <p>
+              {{bio.role}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
+              </p>
+              {{bio.details}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+  </div>
+</div>
+<!--
           <tr>
             <td colspan="2">
               <div class="divider"></div>
@@ -687,8 +718,3 @@ td {
             <td class="bio">Associate Mentor. Mon 11:00 AM. Mon 12:00 PM. nkhuu@berkeley.edu. Hi, I'm Nathan! I'm a third year computer science and cognitive science double major. This is my third semester leading CSM sections for 61A, and I'm excited for another semester! In CS, my interests are in human-computer interaction and data visualization, but I've enjoyed courses in systems, networking, and, of course, 61A! Outside of school and CS, I'm very much a homebody. But when I'm out, I do like to explore new food places and a good escape room is always fun. </td>
           </tr>
 
-        </tbody>
-      </table>
-      </div>
-  </div>
-</div>
