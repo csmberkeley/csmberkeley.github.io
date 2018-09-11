@@ -8,31 +8,15 @@ td {
 .bio {
   padding-left: 40px;
 }
-.image {
-  width:250px;
-  height:167px;
-}
-
-.image2 {
-  width:200px;
-  height:200px;
-}
-.image3 {
-  width:200px;
-  height:243px;
-}
-
-.bio-container {
+.img-container {
   width:200px;
   height:200px;
   overflow: hidden;
-  display: inline-block;
+  display: block;
 }
-
-.bio-image {
-  width: 100%
+.img-container > img{
+  max-width:100%;
 }
-
 
 </style>
 </head>
@@ -45,21 +29,120 @@ td {
     </div>
   </div>
       <table>
-      <tbody ng-controller="BiosController">
-        <!-- I've deliberately left out emails.--> 
-        <tr ng-repeat="bio in Exec">
-          <td>
-            <img src="{{bio.imgName}}" onerror="if (this.src != 'img/people/placeholder.jpg') this.src = 'img/people/placeholder.jpg';" style="margin-top:8px" class="image">
-          </td>
-          <td class="bio">
-            <p class="label">{{bio.name}}</p>
-            <p>
-            {{bio.role}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
-            </p>
-            {{bio.details}}
-          </td>
-        </tr>
-      </tbody>
+        <tbody>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/jason-goodman.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Jason Goodman </p>
+              President. Hi! I began my journey in CSM as a freshman student in CS 61A, an experience that I found extremely helpful and an essential part of my success in the course. The following semester, I became a junior mentor while still taking CSM courses as a student, and it was then that CSM became not only a place that I went to for academic support, but also my community. I am now in my fifth semester of mentoring for CSM, and I have previously been a senior mentor and course coordinator. I am excited to help CSM continue to grow this semester and look forward to helping both mentors and students find their CS journeys at Cal. Please feel free to contact me with any suggestions/questions, thoughts about life, or grumblings about the state of Cal Athletics. Oh, and go Bears!</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/joy2.jpg" style="margin-top:8px" class="image3">
+            </td>
+            <td class="bio">
+              <p class="label" > Joy Tang </p>
+              Internal Vice President. Hi my name is Joy, and I'm a 3rd year computer science major. This is my 3rd semester mentoring for 61B, and I can't wait to meet you! I'm obsessed with dance, cybersecurity, standup, and food, so come talk to me if you think I'm interesting or cool :) or just come talk to me :) I promise I'm fun</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/suraj-rampure.png" style="margin-top:8px">
+            </td>
+            <td class="bio">
+              <p class="label" > Suraj Rampure </p>
+              External Vice President. Hey, I'm a third year EECS major from Windsor, Ontario (right across the border from Detroit). I like cars, tech, men's fashion, teaching and rooting for LeBron (go Cavs Lakers!) In addition to being on CSM exec, I also am a TA for Data 100, and teach Introduction to Mathematical Thinking, a new DeCal meant to teach students introductory discrete math concepts. </td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/chris-allsman.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Chris Allsman </p>
+              CS61A Coordinator. Hi there! I'm a 3rd year Computer Science major from Fresno, California. I've been teaching 61A for 4 semesters now, and have been involved with CSM for just as long. Outside of teaching, my interests include cooking, video editing, and 20th century avant-garde music.</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/lindsay-yang.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Lindsay Yang</p>
+              CS61A Coordinator.  I like boba and I wear a lot of black, but my favorite color is pink. </td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/dee-guo.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Dee Guo</p>
+              CS61B Coordinator.  Hello! I am a third year CS major. I like penguins :)</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/max-ovsiankin.jpeg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Max Ovsiankin</p>
+              CS70 Coordinator. Hello, I adore CS theory and math! My other interests include music, reading, pop philosophy, hacking, hiking and lifting, and eating my corn in rows. I was born in Israel and grew up in the Bay Area. </td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/varsha-ramakrishnan.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Varsha Ramakrishnan </p>
+              EE16A Coordinator. Varsha Ramakrishnan is a sophomore EECS major and Co-Coordinator for CSM EE16A. She began to enjoy teaching when she ran a tutoring business in high school, and carried it over to college by tutoring CS61A, EE16A, EE16B, and CS188. Although she is generally likened to a robot, Varsha spends her days doing classwork and research, reading sci-fi/fantasy novels and manga, playing Nintendo games, and attempting to draw. Varsha also codes sometimes, when the occasion calls for it, and is always down to try new boba places or discuss anything, from personal thoughts to archaic fictional time travel theories. At present, Varsha would like to thank you for taking the time to get to the end of this, and wish you a good day!</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/paul-bitutsky.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Paul Bitutsky </p>
+              Social Chair. I’m a web developer, programmer, and an undergraduate student at the University of California, Berkeley, where I am studying Computer Science and Business Administration. My passion for technology was initially sparked by my parents, both IT professionals. I pursued my interest from a young age by building websites and creating mobile apps. My dream is to use technology to improve the world and help people lead more productive lives.</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/matthewsoh.jpg" style="margin-top:8px" class="image2">
+            </td>
+            <td class="bio">
+              <p class="label" > Matthew Soh </p>
+              Tech Chair. Hi! I'm a third-year EECS major from sunny Singapore. I've been a tutor for CS61A and CS61B, and I'm currently a TA for CS170. I love data structures and algorithms, especially graph algorithms (that you'll learn this semester!). I'm a big fan of musical theater (I know most of Hamilton by heart.) I spend my Sundays at church. I drink a lot of coffee that I brew with my espresso machine. On campus, I've also been in CodeBase and ML@B. I recently joined the Robotics & AI Lab @ BAIR as an undergraduate researcher. </td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/kevin-lin-sp18.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Kevin Lin </p>
+              Advisor. I like teaching!</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/jerry-huang.jpg" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label" > Jerry Huang</p>
+              Advisor. Hi! I'm a fourth year CS / Applied Math major with an English minor...so yes I'm all over the place. I really enjoy the stats-y / math-y / algorithm-y side of CS and I've been teaching since the second semester of freshman year. I joined CSM in Fall 2016 as a 70 JM and I really fell in love with CSM and teaching 70! So I've continued doing both since! On the non-CS side of things, I like squealing at dogs, cooking Chinese food, piano, poetry, fountain pens and general stationery things, fashion, running, and boba! </td>
+          </tr> 
+          <tr>
+            <td class="img-container">
+              <img src="img/people/mudit.png" style="margin-top:8px">
+            </td>
+            <td class="bio">
+              <p class="label" > Mudit Gupta </p>
+              Advisor. Hello! I'm a 4th year EECS undergrad and I'm interested in algorithms application-y / software engineering-y things. I intend to take pretty much all the undergraduate courses in these areas, and some grad courses too. I have a particular kind of notebook I like and I bring a suitcase filled with them from Dubai every year or so... heh.</td>
+          </tr>
+          <tr>
+            <td class="img-container">
+              <img src="img/people/aditya-baradwaj.jpg" style="margin-top:8px" class="image2">
+            </td>
+            <td class="bio">
+              <p class="label" > Aditya Baradwaj </p>
+              Advisor. Hi all! I am a fourth-year EECS major from Chennai, India. I took the first large-scale offering of EE 16A as a freshman, and I loved it! I also enjoy CS theory, and have TA'd CS 70 and 170. I'm very interested in learning how to improve educational outcomes, particular in fields like CS. In my free time, I enjoy reading about history and languages, and walking to the Big C.</td>
+          </tr>
+        </tbody>
       </table>
 </div>
       
