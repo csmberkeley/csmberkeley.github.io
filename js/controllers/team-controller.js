@@ -7,8 +7,8 @@
       'External Vice President': 'Organizes outreach to companies, manages social media, also helps with branding and marketing.',
       'Communications': 'Manages CSM email lists, drafts and sends feedback forms, newsletters, and emails, manages CSM apparel.',
       'Coord': 'Plans course timelines based on semester + curriculum, main point of contact for course staff, leads Senior Mentor meetings, mentor recruitment, attendace, feedback, and Piazza.',
-      'Socials': 'Leads direction on social aspect of orientation w/ a committee, mentor training, facilitates discussions and brainstorming on developing a CSM community.',
-      'Technology': 'Leads software development of Scheduler, internal interviewing software, and other apps at https://github.com/csmberkeley. Acts as product manager.',
+      'Socials Chair': 'Leads direction on social aspect of orientation w/ a committee, mentor training, facilitates discussions and brainstorming on developing a CSM community.',
+      'Tech Chair': 'Leads software development of Scheduler, internal interviewing software, and other apps at https://github.com/csmberkeley. Acts as product manager.',
       'Advisor': 'Provides input and advice during meetings to all members of Exec, assists with transition / training of new exec memebers.'
     }
     $scope.duty = function(position) {
@@ -17,7 +17,80 @@
       }
       return duties[position];
     }
-    const allOfficers = [[
+    const allOfficers = [
+    [
+      {
+        "name": "Jason Goodman",
+        "img": "jason-exec.jpg",
+        "position": "President"
+      }, 
+      {
+        "name": "Joy Tang",
+        "img": "joy-exec.jpg",
+        "position": "Internal Vice President"
+      },
+      {
+        "name": "Suraj Rampure",
+        "img": "suraj-exec.png",
+        "position": "External Vice President"
+      },
+      //{
+        //"name": "Joy Tang",
+        //"img": "joy-exec.jpg",
+        //"position": "Communications"
+      //},
+      {
+        "name": "Matthew Soh",
+        "img": "matthew-exec.jpg",
+        "position": "Tech Chair"
+      },
+      {
+        "name": "Paul Bitutsky",
+        "img": "paul-exec.jpg",
+        "position": "Socials Chair"
+      },
+      //{
+        //"name": "Jennie Chen",
+        //"img": "jennie-chen-exec.jpg",
+        //"position": "CS 61A Coordinator"
+      //},
+      {
+        "name": "Chris Allsman",
+        "img": "chris-exec.jpg",
+        "position": "CS 61A Coordinator"
+      },
+      //{
+        //"name": "Matthew Soh",
+        //"img": "matthew-exec.jpg",
+        //"position": "CS 61B Coordinator"
+      //},
+      {
+        "name": "Mudit Gupta",
+        "img": "muditgupta.jpg",
+        "position": "Advisor"
+      },
+      //{
+        //"name": "Suraj Rampure",
+        //"img": "suraj-exec.png",
+        //"position": "CS 70 Coordinator"
+      //},
+      //{
+        //"name": "Yining Liu",
+        //"img": "yining-exec.jpg",
+        //"position": "CS 70 Coordinator"
+      //},
+      {
+        "name": "Varsha Ramakrishnan",
+        "img": "varsha-exec.jpg",
+        "position": "EE 16A Coordinator"
+      },
+      {
+        "name": "Aditya Baradwaj",
+        "img": "aditya.jpg",
+        "position": "Advisor" 
+      }, 
+    ],
+      [
       {
         "name": "Kevin Lin",
         "img": "kevin-exec.jpg",
@@ -190,9 +263,9 @@
     $scope.activeTeam = 0;
     $scope.officers = allOfficers[0];
 
-    $scope.toggleTeam = function() {
-      $scope.activeTeam = 1 - $scope.activeTeam;
-      $scope.officers = allOfficers[$scope.activeTeam];
+    $scope.switchTeam = function(i) {
+      $scope.activeTeam = i
+      $scope.officers = allOfficers[i];
     }
   });
 })();
