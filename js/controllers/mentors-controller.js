@@ -1,7 +1,7 @@
 (function() {
   angular.module('CSM')
   .controller('MentorsController', function($scope) {
-    $scope.applicationsOpen = true;
+    $scope.applicationsOpen = false;
     $scope.events = [
       { 'date': '8/20 11:59 PM', 'title': 'Apps due' },
       { 'date': '8/21 11:59 PM', 'title': 'Interview notifications' },
