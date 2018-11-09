@@ -36,7 +36,7 @@
         })
         .when('/scheduler', {
             redirectTo: function() {
-                window.location.href = 'http://csmscheduler.herokuapp.com/'
+                window.location.href = 'http://scheduler.csmentors.org/'
             }
         })
         .when('/interview', {
