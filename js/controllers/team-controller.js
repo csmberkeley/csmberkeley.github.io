@@ -34,11 +34,11 @@
         "img": "suraj-exec.png",
         "position": "External Vice President"
       },
-      //{
-        //"name": "Joy Tang",
-        //"img": "joy-exec.jpg",
-        //"position": "Communications"
-      //},
+      {
+        "name": "Yiling Kao",
+        "img": "yiling-kao-square.jpg",
+        "position": "Communications"
+      },
       {
         "name": "Matthew Soh",
         "img": "matthew-exec.jpg",
@@ -49,39 +49,44 @@
         "img": "paul-exec.jpg",
         "position": "Socials Chair"
       },
-      //{
-        //"name": "Jennie Chen",
-        //"img": "jennie-chen-exec.jpg",
-        //"position": "CS 61A Coordinator"
-      //},
       {
         "name": "Chris Allsman",
         "img": "chris-exec.jpg",
         "position": "CS 61A Coordinator"
       },
-      //{
-        //"name": "Matthew Soh",
-        //"img": "matthew-exec.jpg",
-        //"position": "CS 61B Coordinator"
-      //},
       {
-        "name": "Mudit Gupta",
-        "img": "muditgupta.jpg",
-        "position": "Advisor"
+        "name": "Lindsay Yang",
+        "img": "lindsay-yang-square.jpg",
+        "position": "CS 61A Coordinator"
       },
-      //{
-        //"name": "Suraj Rampure",
-        //"img": "suraj-exec.png",
-        //"position": "CS 70 Coordinator"
-      //},
-      //{
-        //"name": "Yining Liu",
-        //"img": "yining-exec.jpg",
-        //"position": "CS 70 Coordinator"
-      //},
+      {
+        "name": "Dee Guo",
+        "img": "dee-guo-square.jpg",
+        "position": "CS 61B Coordinator"
+      },
+      {
+        "name": "Yichen Sun",
+        "img": "yichen-sun-square.jpg",
+        "position": "CS 61B Coordinator"
+      },
+      {
+        "name": "Max Ovsiankin",
+        "img": "max-ovsiankin-square.jpeg",
+        "position": "CS 70 Coordinator"
+      },
+      {
+        "name": "Nick Titterton",
+        "img": "nick-titterton-square.jpg",
+        "position": "CS 70 Coordinator"
+      },
       {
         "name": "Varsha Ramakrishnan",
         "img": "varsha-exec.jpg",
+        "position": "EE 16A Coordinator"
+      },
+      {
+        "name": "Yannan Tuo",
+        "img": "yannan-tuo-square.jpg",
         "position": "EE 16A Coordinator"
       },
       {
@@ -89,6 +94,11 @@
         "img": "aditya.jpg",
         "position": "Advisor" 
       }, 
+      {
+        "name": "Mudit Gupta",
+        "img": "muditgupta.jpg",
+        "position": "Advisor"
+      },
     ],
       [
       {
