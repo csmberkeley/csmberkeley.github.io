@@ -63,12 +63,12 @@
       text-align: center;
       width: 80%;
     }
-    #pre-course4 {
+    #pre-course6 {
       transition: all 1.5s;
       transform: scale(4);
       opacity: 0;
     }
-    #pre-course4.onload {
+    #pre-course6.onload {
       opacity: 1;
       transform: scale(1);
     }

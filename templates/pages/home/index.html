@@ -10,17 +10,23 @@
       <div class="animate subintro">Computer Science Mentors for introductory computer science courses at UC Berkeley</div>
       <div style="height: 100px"></div>
       <div class="row courses">
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <h4 class="animate" id="course1">CS 61A</h4>
         </div>
-        <div class="col s12 m3">
-          <h4 class="animate" id="course2">CS 61B</h4>
+        <div class="col s12 m4">
+          <h4 class="animate" id="course2">CS 88</h4>
         </div>
-        <div class="col s12 m3">
-          <h4 class="animate" id="course3">CS 70</h4>
+        <div class="col s12 m4">
+          <h4 class="animate" id="course3">CS 61B</h4>
         </div>
-        <div class="col s12 m3">
-          <h4 class="animate" id="course4">EE 16A</h4>
+        <div class="col s12 m4">
+          <h4 class="animate" id="course4">CS 61C</h4>
+        </div>
+        <div class="col s12 m4">
+          <h4 class="animate" id="course5">CS 70</h4>
+        </div>
+        <div class="col s12 m4">
+          <h4 class="animate" id="course6">EE 16A</h4>
         </div>
       </div>
 
@@ -140,10 +146,11 @@
     loadNext('#intro3', 500);
     loadNext('.cover-darken', 0);
     loadNext('.subintro', 500);
+    const COURSE_COUNT = 6;
     loadNext('#course1', 500);
-    loadNext('#course2', 250);
-    loadNext('#course3', 250);
-    loadNext('#course4', 250);
+    for (let i = 2; i <= COURSE_COUNT; i++) {
+      loadNext(`#course${i}`, 250);
+    }
     setTimeout(showStats, timeout + 800);
   });
 </script>
