@@ -42,29 +42,27 @@ td {
 <div class="container">
   <div class="section">
     <div class="col l8 offset-l2 s10 offset-s1">
-        <h5 class="label">CS61B Mentor Bios</h5>
+    	<h5 class="label">CS61B Mentor Bios</h5>
         <p class="info">Bios for CSM CS61B Mentors.</p>
     </div>
-  <div>
-    <table>
-      <tbody ng-controller="BiosController">
-        <!-- I've deliberately left out emails.--> 
-        <tr ng-repeat="bio in CS61B">
-          <td>
-            <img src="{{bio.imgName}}" onerror="if (this.src != 'img/people/placeholder.jpg') this.src = 'img/people/placeholder.jpg';" style="margin-top:8px" class="image">
-          </td>
-          <td class="bio">
-            <p class="label">{{bio.name}}</p>
-            <p>
-            {{bio.role}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
-            </p>
-            {{bio.details}}
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-
-</div>
-
+    <div>
+      <table>
+        <tbody ng-controller="BiosController">
+          <!-- I've deliberately left out emails.--> 
+          <tr ng-repeat="bio in CS61B">
+            <td>
+              <img src="img/people/{{bio.imgName}}" onerror="if (this.src != 'img/logo_placeholder.png') this.src = 'img/logo_placeholder.png';" style="margin-top:8px" class="image">
+            </td>
+            <td class="bio">
+              <p class="label">{{bio.name}}</p>
+              <p>
+              {{bio.courses["CS61B"]}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
+              </p>
+              {{bio.details}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+  </div>
 </div>

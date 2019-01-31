@@ -42,21 +42,21 @@ td {
 <div class="container">
   <div class="section">
     <div class="col l8 offset-l2 s10 offset-s1">
-    	<h5 class="label">CS61A Mentor Bios</h5>
-        <p class="info">Bios for CSM CS61A Mentors.</p>
+    	<h5 class="label">CS61C Mentor Bios</h5>
+        <p class="info">Bios for CSM CS61C Mentors.</p>
     </div>
     <div>
       <table>
         <tbody ng-controller="BiosController">
           <!-- I've deliberately left out emails.--> 
-          <tr ng-repeat="bio in CS61A">
+          <tr ng-repeat="bio in CS61C">
             <td>
               <img src="img/people/{{bio.imgName}}" onerror="if (this.src != 'img/logo_placeholder.png') this.src = 'img/logo_placeholder.png';" style="margin-top:8px" class="image">
             </td>
             <td class="bio">
               <p class="label">{{bio.name}}</p>
               <p>
-              {{bio.courses["CS61A"]}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
+              {{bio.courses["CS61C"]}} <!-- {{bio.day}}, {{bio.startTime}} - {{bio.endTime}}. !-->
               </p>
               {{bio.details}}
             </td>
