@@ -1,8 +1,9 @@
 <section class="row center team" ng-controller="TeamController as teamCtrl">
   <h5 class="subtitle">
-    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 0}" ng-click="switchTeam(0)">Fall 2018 Team</span> |
-    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 1}" ng-click="switchTeam(1)">Spring 2018 Team</span> |
-    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 2}" ng-click="switchTeam(2)">Fall 2017 Team</span> 
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 0}" ng-click="switchTeam(0)">Spring 2019 Team</span> |
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 1}" ng-click="switchTeam(1)">Fall 2018 Team</span> |
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 2}" ng-click="switchTeam(2)">Spring 2018 Team</span> |
+    <span class="team-title" ng-class="{'team-title-inactive': activeTeam !== 3}" ng-click="switchTeam(3)">Fall 2017 Team</span> 
    </h5>
   <p><h6 class="center-align">Hover over photos for more info!</h6></p>
   <br>
@@ -11,7 +12,7 @@
       <div class="cube-scene">
         <div class="cube">
           <div class="unflipped">
-            <img class="responsive-img" width="200px" ng-src="img/people/{{ officer.img }}">
+            <img class="responsive-img" width="200px" ng-src="img/team/{{ officer.img }}">
           </div>
           <div class="flipped">
             <div class="cube-title">{{ officer.position }}</div>
