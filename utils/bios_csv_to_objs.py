@@ -28,24 +28,27 @@ def list_img_dir(force=False):
     img_list = img_list or os.listdir(img_dl_location)
     return img_list
 
+failures = []
+
 def get_photo(name, photo_id):
     normalized_name = "-".join(name.lower().split(" "))
 
     # Check if the image already exists
     for x in list_img_dir():
         if normalized_name in x: # use the one with the correct file extension
-            print("image exists locally")
-            return os.path.join(base_img_location, x)
+            # print("image exists locally for {}".format(normalized_name))
+            return x
 
     # The image does not exist locally
     exit_code = subprocess.call(
-        ["gdrive", "download", "--path", "photo_id", "img_stage_location"]
+        ["gdrive", "download", photo_id, "--path", img_stage_location]
     )
     if exit_code != 0:
         warn(
-            "Attempt to download photo for {}, photo_id={} did not complete"
-            "successfully. (exit code {})".format(name, photo_id, exit_code)
+            "Attempt to download photo for {}, photo_id={} did not complete successfully. (exit code {})" \
+                .format(name, photo_id, exit_code)
         )
+        failures.append(name)
     else:
         img_filename = os.listdir(img_stage_location)[0]
         file_extension = img_filename.split(".")[-1]
@@ -57,7 +60,7 @@ def get_photo(name, photo_id):
                 os.path.join(img_dl_location, new_img_filename),
             ]
         )
-        return os.path.join(base_img_location, new_img_filename)
+        return new_img_filename
 
 """
 bio = {
@@ -69,17 +72,15 @@ bio = {
 }
 """
 def read_bios():
-    obj = {}
+    objs = {}
     with open(BIOS_LOCATION, "r") as csvfile:
         reader = csv.reader(csvfile)
-
-        header = True
+        next(reader)
         for row in reader:
-            if header:
-                header = False
-                continue
             _, email, name, photo_url, bio, website, _ = row
-            photo = get_photo(name, photo_url)
+            # (id field should be after ?id=)
+            photo_id = photo_url.split("=")[-1]
+            photo = get_photo(name, photo_id)
             obj = {
                 "name": name,
                 "email": email,
@@ -87,14 +88,16 @@ def read_bios():
                 "imgName": photo,
                 "courses": {}
             }
+            if website:
+                obj["website"] = website
             # in sp19, need to populate course/role from elsewhere
-            objs["email"] = obj
-    return obj
+            objs[email] = obj
+    return objs
 
 CLASSES = ("cs61a", "ee16a", "cs61b", "cs70", "cs61c", "cs88")
 def read_rosters(objs):
     for cn in CLASSES:
-        with open(os.path.join("mentors", "{}.csv").format(CLASSES), "r") as csvfile:
+        with open(os.path.join("mentors", "{}.csv").format(cn), "r") as csvfile:
             reader = csv.reader(csvfile)
             next(reader) # skip header
             for row in reader:
@@ -102,12 +105,17 @@ def read_rosters(objs):
                 email = row[1]
                 role = row[2]
                 if email not in objs: # didn't fill out bio form
-                    objs[email] = { "email": email, "courses": {} }
-                obj = objs[email]
-                obj["courses"][cn.upper()] = role
+                    objs[email] = { "email": email, "courses": {}, "imgName": "" }
+                if "name" not in objs[email]:
+                    objs[email]["name"] = row[0]
+                objs[email]["courses"][cn.upper()] = role
 
 def main():
     objs = read_bios()    
     read_rosters(objs)
+    if failures:
+        warn("failed to get images for: {}".format(failures))
     with open(OUT_LOCATION, "w") as outfile:
-        json.dump(objs, outfile)
+        json.dump(list(objs.values()), outfile, indent=4)
+
+main()
