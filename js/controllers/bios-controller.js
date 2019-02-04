@@ -3187,13 +3187,14 @@
             }
             for (let i = 0; i < bios.length; ++i) {
                 for (let [course, role] of Object.entries(bios[i].courses)) {
-                    split_bios[course].push(bios[i]);
+                    if (role !== "Coordinator") {
+                        split_bios[course].push(bios[i]);
+                    }
                 }
             }
 
-            courses = Object.keys(split_bios);
-            for (var i = 0; i < courses.length; ++i) {
-                $scope[courses[i]] = split_bios[courses[i]].sort((b1, b2) => {
+            for (var i = 0; i < COURSES.length; ++i) {
+                $scope[COURSES[i]] = split_bios[COURSES[i]].sort((b1, b2) => {
                     return b1["name"].localeCompare(b2["name"]);
                 });
             }
