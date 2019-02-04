@@ -710,7 +710,7 @@
                     "name": "Albert Yu",
                     "email": "albertyu@berkeley.edu",
                     "details": "\"The name of my town is Plains, Georgia. The name of my street is Peanut Farming. The name of my school is PhD peanut guarding. Peanut Farm is a pretty place to see in our town.\" ~Excerpt from my 8-year old brother's essay",
-                    "imgName": "albert-yu.incomplete",
+                    "imgName": "albert-yu.jpg",
                     "courses": {
                         "CS61A": "Senior Mentor"
                     }
