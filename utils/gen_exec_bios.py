@@ -1,3 +1,8 @@
+"""
+Generates JSON to be fed into bios-controller.js. On OSX, just run "python3 gen_exec_bios.py | pbcopy"
+to copy the output to clipboard.
+"""
+
 import json
 import csv
 
@@ -128,6 +133,7 @@ for e in execs:
     e['courses'] = { 'EXEC': e['position'] }
     del e['position']
     e['imgName'] = e['img']
+    del e['img']
 
 with open('bios.csv') as file:
     reader = csv.reader(file)
