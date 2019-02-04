@@ -29,9 +29,15 @@ def list_img_dir(force=False):
     return img_list
 
 failures = []
+seen = set()
+dups = []
 
 def get_photo(name, photo_id):
     normalized_name = "-".join(name.lower().split(" "))
+    if normalized_name in seen:
+        dups.append(normalized_name)
+    else:
+        seen.add(normalized_name)
 
     # Check if the image already exists
     for x in list_img_dir():
@@ -115,6 +121,8 @@ def main():
     read_rosters(objs)
     if failures:
         warn("failed to get images for: {}".format(failures))
+    if dups:
+        warn("WARNING: duplicate names detected: {}; please resolve manually".format(dups))
     with open(OUT_LOCATION, "w") as outfile:
         json.dump(list(objs.values()), outfile, indent=4)
 

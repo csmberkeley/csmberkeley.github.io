@@ -2398,7 +2398,7 @@
                     "name": "David Wang",
                     "email": "kaiyue.wang@berkeley.edu",
                     "details": "Hi everyone! I'm David, a third year studying Computer Science. On the side I play tennis and enjoy binge watching dramas a lot for some reason. Overall, I'm a chill dude, who enjoys a nice convo with others. Hope you come by!",
-                    "imgName": "david-wang.jpeg",
+                    "imgName": "kaiyue-wang.jpg",
                     "courses": {
                         "CS61B": "Senior Mentor"
                     }
