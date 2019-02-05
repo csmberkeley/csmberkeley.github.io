@@ -802,7 +802,7 @@
                     "name": "Mary Xu",
                     "email": "ruili.xu@berkeley.edu",
                     "details": "Hello! I'm a second year CS major from Fremont, CA. This is my second semester tutoring 61A and first time being a senior mentor. Some things I enjoy are trying new food places, napping, and lemon oreo thins. Looking forward to a great semester! ",
-                    "imgName": "mary-xu.jpg",
+                    "imgName": "mary-xu.jpeg",
                     "courses": {
                         "CS61A": "Senior Mentor"
                     }
@@ -1688,7 +1688,7 @@
                     "name": "Trevor Wu",
                     "email": "trevorhwu@berkeley.edu",
                     "details": "Hello everyone, I'm Trevor, I'm very interested in transportation, housing, and urban development. I worked at the San Francisco MTA over the summer doing traffic lights, and no, I cannot fix BART. CS61A was my first CS course and I really enjoyed it, I hope I can help you do well in the course as well. My hobbies are hiking + climbing (if time), video games, taking public transit/bikeshare, podcasts, and boba.  ",
-                    "imgName": "trevor-wu.jpg",
+                    "imgName": "trevor-wu.png",
                     "courses": {
                         "CS61A": "Junior Mentor"
                     },
@@ -1763,7 +1763,7 @@
                     "name": "Gina Condotti",
                     "email": "ginacondotti2021@berkeley.edu",
                     "details": "Hello! My name is Gina and I'm a second-year CS major. CS70 is the most interesting and rewarding course I have taken at Cal so far, and I am really exciting to being teaching it! Currently, I'm really into Binging with Babish on Youtube, becoming fluent in Italian, and the color red. I hope you enjoy CS70 as much as I did :-) ",
-                    "imgName": "gina-condotti.png",
+                    "imgName": "gina-condotti.JPG",
                     "courses": {
                         "CS70": "Junior Mentor"
                     }
