@@ -19,15 +19,19 @@
         <div class="col s12 m4">
           <h4 class="animate" id="course3">CS 61B</h4>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <h4 class="animate" id="course4">CS 61C</h4>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <h4 class="animate" id="course5">CS 70</h4>
         </div>
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <h4 class="animate" id="course6">EE 16A</h4>
         </div>
+        <div class="col s12 m3">
+          <h4 class="animate" id="course7">EE 16B</h4>
+        </div>
+        <!-- When adding a new course, change the COURSE_COUNT constant below -->
       </div>
 
       <div class="stats">
@@ -160,7 +164,7 @@
     loadNext('#intro3', 500);
     loadNext('.cover-darken', 0);
     loadNext('.subintro', 500);
-    const COURSE_COUNT = 6;
+    const COURSE_COUNT = 7;
     loadNext('#course1', 500);
     for (let i = 2; i <= COURSE_COUNT; i++) {
       loadNext(`#course${i}`, 250);
